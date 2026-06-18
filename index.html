@@ -72,6 +72,7 @@
       background: var(--panel);
       padding: 24px 20px 22px;
       border-bottom: 1px solid var(--line);
+      min-height: 118px;
     }
 
     .title-row {
@@ -84,6 +85,7 @@
 
     .title-copy {
       min-width: 0;
+      flex: 1;
     }
 
     .header-actions {
@@ -91,6 +93,8 @@
       align-items: center;
       flex-shrink: 0;
       gap: 8px;
+      min-width: 132px;
+      justify-content: flex-end;
     }
 
     h1 {
@@ -103,7 +107,8 @@
       margin: 7px 0 0;
       color: var(--muted);
       font-size: 12px;
-      line-height: 1.45;
+      line-height: 1.38;
+      min-height: 34px;
     }
 
     .badge {
@@ -111,13 +116,16 @@
       font-size: 11px;
       font-weight: 800;
       padding: 8px 10px;
+      min-width: 72px;
       background: var(--blue-soft);
       color: var(--blue);
+      text-align: center;
       text-transform: uppercase;
       letter-spacing: 0;
     }
 
     .lang-btn {
+      width: 48px;
       min-height: 32px;
       padding: 0 10px;
       border: 1px solid var(--line);
@@ -156,6 +164,7 @@
       justify-content: center;
       gap: 7px;
       border-radius: 6px;
+      white-space: nowrap;
     }
 
     .tab.active {
@@ -178,6 +187,7 @@
       border: 0;
       position: relative;
       overflow: hidden;
+      min-height: 170px;
     }
 
     .result.capacity {
@@ -214,6 +224,8 @@
       color: var(--muted);
       font-size: 12px;
       font-weight: 800;
+      line-height: 1.35;
+      min-height: 16px;
     }
 
     .result .label {
@@ -326,6 +338,7 @@
       color: var(--muted);
       font-weight: 900;
       border-radius: 6px;
+      white-space: nowrap;
     }
 
     .switch button.active {
@@ -343,6 +356,7 @@
     }
 
     .small-btn {
+      min-width: 86px;
       min-height: 32px;
       padding: 0 10px;
       background: var(--green-soft);
@@ -350,6 +364,7 @@
       font-size: 12px;
       font-weight: 900;
       border-radius: 6px;
+      white-space: nowrap;
     }
 
     .small-btn.off {
@@ -467,6 +482,7 @@
       font-size: 12px;
       font-weight: 900;
       border-radius: 6px;
+      white-space: nowrap;
     }
 
     .projection-controls button.active {
@@ -526,7 +542,6 @@
       color: #8a9588;
       font-size: 11px;
       font-weight: 800;
-      text-transform: uppercase;
       letter-spacing: 0;
     }
 
@@ -547,9 +562,14 @@
         padding: 14px;
       }
 
+      .header {
+        min-height: 112px;
+        padding: 22px 18px 18px;
+      }
+
       .header-actions {
-        align-items: flex-end;
-        flex-direction: column;
+        flex-direction: row;
+        min-width: 128px;
       }
 
       .grid-2,
